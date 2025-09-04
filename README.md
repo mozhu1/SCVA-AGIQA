@@ -61,7 +61,7 @@ Environment: Python 3.10.15 cuda11.8
 ```
 
 
-###  Dependency Installation 
+###  1. Dependency Installation 
 
 ```shell
 conda create -n scva_agiqa python=3.10.13 -y
@@ -69,23 +69,23 @@ conda activate scva_agiqa
 pip install -r requirements.txt
 ```
 
-###  Configuration Setup 
+###  2. Configuration Setup 
 
 Before running the experiment, modify the `DATA_PATH` in your configuration file (e.g., `/configs/agiqa1k.yaml`) to point to your actual dataset location, then ensure `main.py` is configured to load this specific YAML file for parameter settings.
 
-###  Hugging Face Authentication  
+###  3. Hugging Face Authentication  
 
 ```shell
 huggingface-cli login --token <your_token>
 ```
 
-###  Train and test
+###  4. Train and test
 
 ```shell
 python main.py
 ```
 
-### Project Structure Guide
+## Project Structure Guide
 
 For contributors looking to modify or extend the codebase, here are the key directories and files you should be aware of:
 
