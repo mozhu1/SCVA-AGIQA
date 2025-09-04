@@ -10,8 +10,8 @@
 | ----------- | :----------------------------------------------------------: |
 | AGIQA-1K    | [download](https://github.com/lcysyzxdxc/AGIQA-1k-Database)  |
 | AGIQA-3K    | [download](https://github.com/lcysyzxdxc/AGIQA-3k-Database.) |
-| AIGCIQA2023 |   [download](https://github.com/wangjiarui153/AIGCIQA2023)   |
-| AIGIQA-20K |   [download](https://github.com/wangjiarui153/AIGCIQA2023)   |
+| AIGCIQA2023 | [download](https://github.com/wangjiarui153/AIGCIQA2023)   |
+| AIGIQA-20K | [download](https://www.modelscope.cn/datasets/lcysyzxdxc/AIGCQA-30K-Image)   |
 
 ### 2. Descriptive prompts
 
@@ -61,32 +61,26 @@ If you want to generate descriptive prompts on your own, we provide a code examp
 Environment: Python 3.10.15 cuda11.8
 ```
 
-### 1. Code Acquisition
+
+###  Dependency Installation 
 
 ```shell
-git clone https://github.com/mozhu1/SC-AGIQA.git
-cd ./SC-AGIQA-main
-```
-
-### 2. Dependency Installation 
-
-```shell
-conda create -n sc_agiqa python=3.10.13 -y
-conda activate sc_agiqa
+conda create -n scva_agiqa python=3.10.13 -y
+conda activate scva_agiqa
 pip install -r requirements.txt
 ```
 
-### 3. Configuration Setup 
+###  Configuration Setup 
 
 Before running the experiment, modify the `DATA_PATH` in your configuration file (e.g., `/configs/agiqa1k.yaml`) to point to your actual dataset location, then ensure `main.py` is configured to load this specific YAML file for parameter settings.
 
-### 4. Hugging Face Authentication  
+###  Hugging Face Authentication  
 
 ```shell
 huggingface-cli login --token <your_token>
 ```
 
-### 5. Train and test
+###  Train and test
 
 ```shell
 python main.py
