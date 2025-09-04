@@ -1,4 +1,3 @@
-# SCVA-AGIQA
 # Aggregation of Semantic Consistency and Visual Attention for AI-Generated Image Quality Assessment
 
 
@@ -86,6 +85,18 @@ huggingface-cli login --token <your_token>
 python main.py
 ```
 
+### Project Structure Guide
+
+For contributors looking to modify or extend the codebase, here are the key directories and files you should be aware of:
+
+- **Configuration Files**: Located in `SCVA-AGIQA-main/config`  
+  This directory contains all configuration settings, parameters, and environment variables used throughout the project.
+
+- **Dataset Loading**: Found in `SCVA-AGIQA-main/datasets2`  
+  All scripts related to data loading, preprocessing, and dataset management reside here. Modify these files when working with different data sources or formats.
+
+- **Model Implementation**: Primary model code is in `SCVA-AGIQA-main/models_blip/blip.py`  
+  This file contains the core implementation of the BLIP model architecture. Make changes here when adjusting model structure, adding new layers, or modifying forward/backward passes.
 
 
 
