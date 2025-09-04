@@ -1,5 +1,5 @@
 # SCVA-AGIQA
-# Text-Visual Semantic Constrained AI-Generated Image Quality Assessment
+# Aggregation of Semantic Consistency and Visual Attention for AI-Generated Image Quality Assessment
 
 
 ## DATASETS
@@ -39,6 +39,15 @@ AIGCIQA2023K/
     │   ├── image1.jpg
     │   └──...
     └──...
+AIGIQA-20K/
+├── all/
+    ├──all_answer_prompt.csv
+    ├──DALLE2_0000.png
+    ├──DALLE2_0001.png
+    ├──...
+ 
+
+
 ```
 
 ### 3. Generate descriptive prompts(optional)
